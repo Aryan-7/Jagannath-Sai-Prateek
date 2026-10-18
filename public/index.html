@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagannath Sai Prateek | Luxury 3 BHK Apartments in Bhubaneswar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#d97706',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased scroll-smooth">
+
+    <!-- Top Bar / Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-primary text-white p-2 rounded-lg font-bold text-xl tracking-wider">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-slate-900 text-lg leading-tight">Shree Jagannath</span>
+                    <span class="text-xs text-secondary font-semibold uppercase tracking-wider">Projects & Developers</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#overview" class="hover:text-primary transition">Overview</a>
+                <a href="#highlights" class="hover:text-primary transition">Highlights</a>
+                <a href="#amenities" class="hover:text-primary transition">Amenities</a>
+                <a href="#floorplans" class="hover:text-primary transition">Floor Plans</a>
+                <a href="#location" class="hover:text-primary transition">Location</a>
+            </div>
+            <div>
+                <a href="tel:+919938067156" class="bg-primary hover:bg-blue-900 text-white px-5 py-2.5 rounded-xl font-medium text-sm shadow-md transition flex items-center space-x-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>+91 99380 67156</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-28">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-secondary/20 border border-secondary/40 px-3.5 py-1.5 rounded-full text-secondary text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Legacy of Trust Since 2004 • 38 Delivered Projects</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Jagannath Sai Prateek <span class="block text-secondary mt-1">Luxury Living in Bhubaneswar</span>
+                </h1>
+                <p class="text-lg text-slate-300 max-w-xl">
+                    Exclusive premium 3 BHK residential apartments located at Shankarpur, right beside Manipal (AMRI) Hospital. Experience spacious design, natural light, and top-tier amenities.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="bg-secondary hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition flex items-center space-x-2 text-base">
+                        <span>Schedule Site Visit</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:+919938067156" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-4 rounded-xl transition flex items-center space-x-2 text-base backdrop-blur-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Card -->
+            <div class="lg:col-span-5 bg-white text-slate-900 p-8 rounded-3xl shadow-2xl border border-slate-100">
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Book Your Dream Home</h3>
+                <p class="text-slate-500 text-sm mb-6">Fill in your details for instant WhatsApp connect & brochure.</p>
+                
+                <form id="leadForm" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Full Name *</label>
+                        <input type="text" id="name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone Number *</label>
+                        <input type="tel" id="phone" required placeholder="10-digit mobile number" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email Address</label>
+                        <input type="email" id="email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Preferred Time for Visit</label>
+                        <select id="preferredTime" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option value="Morning (10 AM - 1 PM)">Morning (10 AM - 1 PM)</option>
+                            <option value="Afternoon (1 PM - 4 PM)">Afternoon (1 PM - 4 PM)</option>
+                            <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg text-base flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Get Instant Callback via WhatsApp</span>
+                    </button>
+                </form>
+                <div id="formMessage" class="hidden mt-4 p-3 rounded-xl text-sm text-center font-medium"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights / Stats Bar -->
+    <section class="bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="border-r border-blue-800/60 last:border-none">
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">49</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Exclusive Units</span>
+            </div>
+            <div class="border-r border-blue-800/60 last:border-none">
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">3 BHK</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Spacious Layouts</span>
+            </div>
+            <div class="border-r border-blue-800/60 last:border-none">
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">₹6,000</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Per Sq. Ft. Onwards</span>
+            </div>
+            <div>
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">100%</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">BMC & ORERA Approved</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Project Overview</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Designed for Elegance & Uncompromised Comfort</h3>
+            <p class="text-slate-600 mt-4">Located at Shankarpur, right beside Manipal (AMRI) Hospital, Jagannath Sai Prateek offers a serene community lifestyle with just 49 units across 2 elegant towers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Clickable Card for 3 BHK Popover -->
+            <div onclick="openModal('configModal')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition cursor-pointer group">
+                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-primary group-hover:text-white transition">
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                    <span>Spacious 3 BHK Configurations</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-secondary"></i>
+                </h4>
+                <p class="text-slate-600 text-sm leading-relaxed">Every apartment features 3 spacious bedrooms, 3 modern washrooms, and 3 open balconies. <span class="text-primary font-semibold underline block mt-2">Click to view configuration plans</span></p>
+            </div>
+
+            <!-- Clickable Card for Amenities Popover -->
+            <div onclick="openModal('amenitiesModal')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition cursor-pointer group">
+                <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-secondary group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                    <span>Modern Amenities & Security</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-secondary"></i>
+                </h4>
+                <p class="text-slate-600 text-sm leading-relaxed">Enjoy 24x7 security surveillance, power backup for common areas and lifts, lush green landscaping. <span class="text-secondary font-semibold underline block mt-2">Click to view complete list</span></p>
+            </div>
+
+            <!-- Approved Card -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-file-shield"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Approved & Bankable</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">Fully approved by BMC and ORERA. Hassle-free home loan approvals available from all leading nationalized and private banks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Highlights Section -->
+    <section id="highlights" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Gallery & Exterior</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">A Glimpse Into Your Future Home</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Elevation View Card -->
+                <div onclick="openImageViewer('Grand Entrance & Elevation', 'Modern architectural facade with premium stilt parking & secure gated compound.', 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
+                            <span>Grand Entrance & Elevation</span>
+                            <i class="fa-solid fa-expand text-xs text-secondary"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mt-1">Modern architectural facade with premium stilt parking.</p>
+                    </div>
+                </div>
+
+                <!-- Spacious Balconies Card -->
+                <div onclick="openImageViewer('Spacious Balconies', 'Wide airy balconies offering scenic outdoor views, ideal for relaxation and natural lighting.', 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
+                            <span>Spacious Balconies</span>
+                            <i class="fa-solid fa-expand text-xs text-secondary"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mt-1">Wide airy balconies offering scenic views and relaxation space.</p>
+                    </div>
+                </div>
+
+                <!-- Tower View Block A & B Card -->
+                <div onclick="openImageViewer('Block A & B Tower View', 'Exclusive 49 units across 2 elegant towers ensuring absolute privacy, optimal ventilation, and lush green surroundings.', 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
+                            <span>Block A & B Tower View</span>
+                            <i class="fa-solid fa-expand text-xs text-secondary"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mt-1">Exclusive 49 units across 2 towers ensuring absolute privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Lifestyle Features</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">World-Class Amenities</h3>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <i class="fa-solid fa-shield-halved text-3xl text-primary mb-3"></i>
+                <h4 class="font-bold text-slate-900">24x7 Security</h4>
+                <p class="text-xs text-slate-500 mt-1">Gated community with surveillance</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <i class="fa-solid fa-bolt text-3xl text-primary mb-3"></i>
+                <h4 class="font-bold text-slate-900">Power Backup</h4>
+                <p class="text-xs text-slate-500 mt-1">Uninterrupted power for common areas</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <i class="fa-solid fa-car text-3xl text-primary mb-3"></i>
+                <h4 class="font-bold text-slate-900">Stilt Parking</h4>
+                <p class="text-xs text-slate-500 mt-1">Spacious covered parking facility</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <i class="fa-solid fa-tree text-3xl text-primary mb-3"></i>
+                <h4 class="font-bold text-slate-900">Lush Landscaping</h4>
+                <p class="text-xs text-slate-500 mt-1">Green serene environment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plans Section -->
+    <section id="floorplans" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Apartment Layouts</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Thoughtfully Engineered Floor Plans</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Floor Plan 1 -->
+                <div onclick="openImageViewer('3 BHK Luxury Unit (1565 SFT)', '3 Bedrooms, 3 Washrooms, Kitchen, Dining & Dual Balconies with optimal space utilization.', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 text-center cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-64 bg-cover bg-center rounded-xl mb-6 group-hover:scale-105 transition duration-300 flex items-end justify-center p-4 text-white font-bold bg-slate-900/40" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
+                        <span class="bg-slate-900/80 px-4 py-2 rounded-lg text-sm"><i class="fa-solid fa-magnifying-glass-plus mr-2"></i>Click to Enlarge Floor Plan</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-900">3 BHK Luxury Unit (1565 SFT)</h4>
+                    <p class="text-slate-600 text-sm mt-2">3 Bedrooms, 3 Washrooms, Kitchen, Dining & Dual Balconies with optimal space utilization.</p>
+                </div>
+
+                <!-- Floor Plan 2 -->
+                <div onclick="openImageViewer('3 BHK Premium Unit (1055 SFT)', 'Optimized layout featuring elegant living spaces, modern kitchen, and abundant natural ventilation.', 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 text-center cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-64 bg-cover bg-center rounded-xl mb-6 group-hover:scale-105 transition duration-300 flex items-end justify-center p-4 text-white font-bold bg-slate-900/40" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80');">
+                        <span class="bg-slate-900/80 px-4 py-2 rounded-lg text-sm"><i class="fa-solid fa-magnifying-glass-plus mr-2"></i>Click to Enlarge Floor Plan</span>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-900">3 BHK Premium Unit (1055 SFT)</h4>
+                    <p class="text-slate-600 text-sm mt-2">Optimized layout featuring elegant living spaces, modern kitchen, and ventilation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Advantages -->
+    <section id="location" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Prime Location</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold mb-6">Connected to Everything That Matters</h3>
+                <p class="text-slate-300 mb-8 leading-relaxed">
+                    Situated in Shankarpur, Bhubaneswar, Jagannath Sai Prateek places you right beside top-tier healthcare, educational institutions, and daily conveniences.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-secondary/20 text-secondary rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Beside Manipal (AMRI) Hospital</h4>
+                            <p class="text-slate-400 text-sm">Instant access to world-class medical facilities.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-secondary/20 text-secondary rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Top Educational Institutions</h4>
+                            <p class="text-slate-400 text-sm">Close proximity to leading schools and colleges.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-secondary/20 text-secondary rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Markets & Daily Conveniences</h4>
+                            <p class="text-slate-400 text-sm">Seamless connectivity to shopping complexes and commercial hubs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 text-center">
+                <div class="mb-6">
+                    <span class="text-secondary font-bold uppercase tracking-wider text-xs">Special Investment Offer</span>
+                    <h4 class="text-3xl font-extrabold mt-2">₹6,000 / sq. ft.</h4>
+                    <p class="text-slate-400 text-sm mt-1">Construction linked payment plan available</p>
+                </div>
+                <div class="border-t border-slate-700 pt-6 space-y-4 text-left text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Project Location:</span>
+                        <span class="font-semibold text-white">Shankarpur, beside Manipal (AMRI) Hospital</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Developer:</span>
+                        <span class="font-semibold text-white">Shree Jagannath Projects & Developers</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Approvals:</span>
+                        <span class="font-semibold text-white">BMC & ORERA Approved</span>
+                    </div>
+                </div>
+                <a href="tel:+919938067156" class="mt-8 block w-full bg-secondary hover:bg-amber-600 text-slate-950 font-bold py-3.5 rounded-xl transition text-center">
+                    Call +91 99380 67156 Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="bg-primary text-white p-2 rounded-lg font-bold text-xl">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-white text-lg leading-tight">Shree Jagannath</span>
+                        <span class="text-xs text-secondary font-semibold uppercase tracking-wider">Projects & Developers</span>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Building a legacy of trust since 2004 with 38 successfully delivered residential projects across Bhubaneswar.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Contact Information</h4>
+                <p class="text-sm mb-2"><strong class="text-white">Office Address:</strong> N1, A/66, First floor, IRC Village, Bhubaneswar</p>
+                <p class="text-sm mb-2"><strong class="text-white">Phone:</strong> +91 9938067156, 9124102156</p>
+                <p class="text-sm"><strong class="text-white">Project Location:</strong> Shankarpur, beside Manipal (AMRI) Hospital, Bhubaneswar</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#overview" class="hover:text-white transition">Project Overview</a></li>
+                    <li><a href="#highlights" class="hover:text-white transition">Gallery & Exterior</a></li>
+                    <li><a href="#amenities" class="hover:text-white transition">Amenities</a></li>
+                    <li><a href="#floorplans" class="hover:text-white transition">Floor Plans</a></li>
+                    <li><a href="#location" class="hover:text-white transition">Location Advantage</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+            &copy; 2026 Shree Jagannath Projects & Developers. All rights reserved. BMC & ORERA Approved Project.
+        </div>
+    </footer>
+
+    <!-- POPUP MODALS / POPOVERS -->
+
+    <!-- 1. 3 BHK Configurations Modal -->
+    <div id="configModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('configModal')" class="absolute top-6 right-6 w-10 h-10 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center text-slate-700 font-bold transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="mb-6">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest">Detailed Configuration</span>
+                <h3 class="text-2xl font-extrabold text-slate-900 mt-1">Spacious 3 BHK Floor Layouts</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="3 BHK 1565 SFT" class="rounded-xl w-full h-48 object-cover mb-3">
+                    <h4 class="font-bold text-slate-900">1565 SFT Luxury Unit</h4>
+                    <p class="text-xs text-slate-500 mt-1">3 Bedrooms • 3 Washrooms • 3 Balconies</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="3 BHK 1055 SFT" class="rounded-xl w-full h-48 object-cover mb-3">
+                    <h4 class="font-bold text-slate-900">1055 SFT Premium Unit</h4>
+                    <p class="text-xs text-slate-500 mt-1">Optimized Space • Modern Kitchen • Living Room</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="#contact" onclick="closeModal('configModal')" class="bg-primary hover:bg-blue-900 text-white font-bold px-8 py-3.5 rounded-xl inline-block transition shadow-md">
+                    Enquire About Pricing & Availability
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Modern Amenities & Security Modal -->
+    <div id="amenitiesModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('amenitiesModal')" class="absolute top-6 right-6 w-10 h-10 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center text-slate-700 font-bold transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="mb-6">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest">Complete Lifestyle Features</span>
+                <h3 class="text-2xl font-extrabold text-slate-900 mt-1">Modern Amenities & Security Overview</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-shield-halved text-primary text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900">24x7 Security & CCTV</h4>
+                            <p class="text-xs text-slate-500">Gated entry with round-the-clock security guard monitoring and CCTV surveillance.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-bolt text-primary text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Full Power Backup</h4>
+                            <p class="text-xs text-slate-500">Uninterrupted power supply for common areas, lifts, and essential household points.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-car text-primary text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Stilt Covered Parking</h4>
+                            <p class="text-xs text-slate-500">Ample, secure designated parking spaces on stilt level for residents and guests.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-tree text-primary text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Lush Green Landscaping</h4>
+                            <p class="text-xs text-slate-500">Thoughtfully designed open green spaces providing a serene environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Amenities Showcase" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="#contact" onclick="closeModal('amenitiesModal')" class="bg-primary hover:bg-blue-900 text-white font-bold px-8 py-3.5 rounded-xl inline-block transition shadow-md">
+                    Book Site Visit to Experience Amenities
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. General Image Lightbox Viewer Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full text-center">
+            <button onclick="closeModal('imageModal')" class="absolute -top-12 right-0 w-10 h-10 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center font-bold transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <img id="modalImg" src="" alt="Enlarged View" class="max-h-[75vh] mx-auto rounded-2xl shadow-2xl object-contain mb-4">
+            <h3 id="modalTitle" class="text-2xl font-bold text-white mb-2"></h3>
+            <p id="modalDesc" class="text-slate-300 text-sm max-w-xl mx-auto"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR MODALS & WHATSAPP REDIRECT -->
+    <script>
+        window.openModal = function(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) modal.classList.remove('hidden');
+        };
+
+        window.closeModal = function(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) modal.classList.add('hidden');
+        };
+
+        window.openImageViewer = function(title, desc, imgSrc) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+            document.getElementById('modalImg').src = imgSrc;
+            document.getElementById('imageModal').classList.remove('hidden');
+        };
+
+        // Close modal when clicking outside the content box
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-slate-950')) {
+                event.target.classList.add('hidden');
+            }
+        };
+
+        // WhatsApp Instant Callback & Database Backup Submission
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim() || 'Not provided';
+            const preferredTime = document.getElementById('preferredTime').value;
+
+            const msgDiv = document.getElementById('formMessage');
+            if(msgDiv) {
+                msgDiv.className = 'mt-4 p-3 rounded-xl text-sm text-center font-medium bg-emerald-100 text-emerald-700';
+                msgDiv.textContent = 'Redirecting to WhatsApp...';
+            }
+
+            // 1. Send to MongoDB Backend on Render in the background
+            const formData = { name, phone, email, preferredTime };
+            try {
+                await fetch('https://jagannath-backend-xxxx.onrender.com/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+            } catch (err) {
+                console.log('Background database sync error:', err);
+            }
+
+            // 2. Format and Launch WhatsApp Message to your number (+91 9938067156)
+            const whatsappNumber = '919938067156';
+            const message = `Hello, I am interested in Jagannath Sai Prateek!%0A` +
+                            `*Name:* ${encodeURIComponent(name)}%0A` +
+                            `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                            `*Email:* ${encodeURIComponent(email)}%0A` +
+                            `*Preferred Time for Visit:* ${encodeURIComponent(preferredTime)}`;
+
+            setTimeout(() => {
+                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+                window.open(whatsappURL, '_blank');
+                document.getElementById('leadForm').reset();
+            }, 600);
+        });
+    </script>
+</body>
+</html>
